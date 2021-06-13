@@ -33,13 +33,4 @@ of arguments may be passed into the function. The array values passed in will on
 numbers. The only valid return values are true and false.
 """
 
-
-"""
-#### Task 2.4*
-Implement the decorator function, which helps to count how many times
-the function has occurred.
-
-NOTE: NOT able to use global variables.
-"""
-
-# code ...
+#code ...

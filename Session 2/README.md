@@ -79,26 +79,6 @@ True
 True
 ```
 
-#### Task 2.4*
-Implement the decorator function, which helps to count how many times
-the function has occurred.
-
-NOTE: NOT able to use global variables.
-
-Implementation example:
-```python
-@dec
-def foo(): pass
-
-foo()
-foo()
-foo()
-foo()
-r = foo()
-print(r)
->>> 5
-```
-
 
 ## Materials
 
@@ -107,4 +87,3 @@ print(r)
 * [Data structures](https://docs.python.org/3.6/tutorial/datastructures.html)
 * [Variables and Types](https://www.learnpython.org/en/Variables_and_Types)
 * __Basic__ Python tutorial from [here](https://www.tutorialspoint.com/python/index.htm)
-* Very advanced [challenge](http://www.pythonchallenge.com/) for those who are bored
