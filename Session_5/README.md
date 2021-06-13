@@ -42,7 +42,7 @@ NOTE: Look at `ZeroDivisionError`. you can use mulpiple exceptions.
 #### Python Materials
 * __Learning Python__, 4th Edition By Mark Lutz
   * _Chapter 33_ Exception Coding Details
-  * _Chapter 35 Designing with Exceptions
+  * _Chapter 35_ Designing with Exceptions
 * [Exception handling](https://metanit.com/python/tutorial/2.11.php)
 
 
