@@ -16,13 +16,13 @@ zulma akahi
 ```
 
 #### Task 3.2
-Write function 'get_frequency_words' with follow parameters:
+Write function `get_frequency_words(...)` with follow parameters:
 
 * `path_to_text`;
 * `path_to_stop words`;
 * `top_number`.
 
-Inside the function you need to open both `random_text.txt` and `stop_words.txt`. 
+Inside the function you need to open both __'random_text.txt'__ and __'stop_words.txt'__. 
 Read the text from `random_text.txt` whereupon you need to delete stop words from text.
 Finally, you have to print the top frequency of words. The number of printing words is the last parameter of function.
 
