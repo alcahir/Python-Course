@@ -8,34 +8,34 @@ Create 3 Dataframes for csv files __'sales.csv'__, __'houses.csv'__, __'employee
 Extract employee first name/last name from 3 to 10 rows (including) from Employees
 
 #### Task 6.3
-Get amount of men/women among all employees (Please use function value_counts())
+Get amount of men / women among all employees (Please use function value_counts())
 
 #### Task 6.4
-Fill empty cells by 0 in column “square” in houses dataframe
+Fill empty cells by 0 in column __"square"__ in __houses__ dataframe
 
 #### Task 6.5
-Create new column “unit_price” for price/1m2 (Please use the following formula: price/square) + round the result to 2 digits after point.
+Create new column __"unit_price"__ for __price^1m2__ (Please use the following formula: _price / square_) + round the result to 2 digits after point.
 
 #### Task 6.6
-Sort houses dataframe by price descending and put the result to json file.
+Sort __houses__ dataframe by __price__ descending and put the result to json file.
 
 #### Task 6.7
-Please filter employees dataframe and find how much women with name ‘Vera’ we have
+Please filter __employees__ dataframe and find how much women with name __'Vera'__ we have
 
 #### Task 6.8
 Please count how many houses do we have with square >= 100 m2, group by category and subcategory.
 
 #### Task 6.9
-Put the result from task 7 to file .avro
+Put the result from task 7 to file __'.avro'__
 
 #### Task 6.10
-Please update “sales_amount” column according to the following rule “sale_amount” = “sale_amount” + avg(“sale_amount”)*0.02 (Please try to use apply and lambda for it)
+Please update __"sales_amount""__ column according to the following rule __"sale_amount"__ = __"sale_amount"__ + __avg(sale_amount)__ * 0.02 (Please try to use apply and lambda for it)
 
 #### Task 6.11
-Please find all houses that are unsold yet (exists in houses but does not exist in sales, join by house_id). Put house names to .json
+Please find all houses that are unsold yet (exists in __houses__ but does not exist in __sales__, join by __house_id__). Put house names to __".json"__
 
-#### Task 6.12 __OPTIONAL__
-Please find sum of sales_amount by each employee, put the result to excel (emp_id, emp_first_name, emp_last_name, sum(sales_amount)) and mark employees who have less than average sales_amount with red.
+#### Task 6.12 __(OPTIONAL)__
+Please find sum of __sales_amount__ by each employee, put the result to excel (__emp_id__, __emp_first_name__, __emp_last_name__, sum(__sales_amount__)) and mark employees who have less than average __sales_amount__ with red.
 
 ## DATASETS
 
