@@ -5,7 +5,7 @@
 Create 3 Dataframes for csv files __'sales.csv'__, __'houses.csv'__, __'employees.csv'__
 
 #### Task 6.2
-Extract employee first name/last name from 3 to 10 rows (including) from Employees
+Extract employee first name / last name from 3 to 10 rows (including) from Employees
 
 #### Task 6.3
 Get amount of men / women among all employees (Please use function value_counts())

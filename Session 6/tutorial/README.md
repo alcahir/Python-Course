@@ -700,7 +700,6 @@ df1
 
 
 <div>
-<style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -712,7 +711,8 @@ df1
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -768,7 +768,6 @@ df2 = pd.DataFrame(
 )
 df2
 ```
-
 
 
 
