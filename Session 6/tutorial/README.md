@@ -752,22 +752,6 @@ df2 = pd.DataFrame(
 df2
 ```
 
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -837,23 +821,6 @@ df2.at[2, "B"] = "f"
 df2
 ```
 
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -905,23 +872,6 @@ df2
 df2.loc[5] = [3.1415, "c", False]
 df2
 ```
-
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -983,23 +933,6 @@ df1.at["o2", "A"] = np.nan
 df1.at["o4", "C"] = np.nan
 df1
 ```
-
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -1066,22 +999,6 @@ df1
 df1.fillna(0)
 ```
 
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -1152,23 +1069,6 @@ We’ll demonstrate the main methods in action by analyzing a dataset on the chu
 df = pd.read_csv('/Users/Aliaksandra_Varabyo1/OneDrive - EPAM/Desktop/telecom_churn.csv') # change for your path here
 df.head() # 5 rows - default
 ```
-
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -1400,23 +1300,6 @@ The describe method shows basic statistical characteristics of each numerical fe
 df.describe()
 ```
 
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1635,22 +1518,6 @@ df.sort_values(by="Total day charge", ascending=False).head()
 ```
 
 
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1805,23 +1672,6 @@ We can also sort by multiple columns:
 ```python
 df.sort_values(by=["Churn", "Total day charge"], ascending=[True, False]).head()
 ```
-
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -2063,23 +1913,6 @@ In the first case below, we say "give us the values of the rows with index from 
 df.loc[0:5, "State":"Area code"]
 ```
 
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2137,22 +1970,6 @@ df.loc[0:5, "State":"Area code"]
 df.iloc[0:5, 0:3]
 ```
 
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -2242,23 +2059,6 @@ The apply method can also be used to apply a function to each row. To do this, s
 ```python
 df[df["State"].apply(lambda state: state[0] == "W")].head()
 ```
-
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -2416,23 +2216,6 @@ d = {"No": False, "Yes": True}
 df["International plan"] = df["International plan"].map(d)
 df.head()
 ```
-
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -2600,27 +2383,6 @@ columns_to_show = ["Total day minutes", "Total eve minutes", "Total night minute
 df.groupby(["Churn"])[columns_to_show].describe(percentiles=[])
 ```
 
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -2730,27 +2492,6 @@ columns_to_show = ["Total day minutes", "Total eve minutes", "Total night minute
 df.groupby(["Churn"])[columns_to_show].agg([np.mean, np.std, np.min, np.max])
 ```
 
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -2842,23 +2583,6 @@ df2 = pd.DataFrame({'key': ['K0', 'K1', 'K2'],
 df1.set_index('key').join(df2.set_index('key'))
 ```
 
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2914,23 +2638,6 @@ df1.set_index('key').join(df2.set_index('key'))
 df1.set_index('key').join(df2.set_index('key'), how = 'inner')
 ```
 
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2976,23 +2683,6 @@ Suppose we want to see how the observations in our dataset are distributed in th
 ```python
 pd.crosstab(df["Churn"], df["International plan"])
 ```
-
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -3042,23 +2732,6 @@ df.pivot_table(
     aggfunc="mean",
 ).head(10)
 ```
-
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -3119,23 +2792,6 @@ df.insert(loc=len(df.columns), column="Total calls", value=total_calls)
 # we set it to len(df.columns) to paste it at the very end of the dataframe
 df.head()
 ```
-
-
-
-
-<div>
-
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -3306,23 +2962,6 @@ df["Total charge"] = (
 df.head()
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3519,23 +3158,6 @@ df['International plan'].value_counts() # easier
 df[['State','Voice mail plan','Number vmail messages']].loc[5:13,:]
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
