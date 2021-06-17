@@ -6,4 +6,24 @@ _ANSWER_:
 ![alt tag](images/Picture1.png)
 
 ### Task 3
+Implement the `DataParser` class, whose constructor takes two values:
+* `path_to_json`
+* `number_of_lines` - the number of lines to read from the file.
 
+#### Task 3.1
+Implement the `get_data_iterator(...)` method, which takes the same parameters as the constructor.
+In the body of the method, you need to check for the existence of the passed file path. 
+If such a path does not exist, then an Exception should be raised with the message __("Incorrect path")__.
+If the path exists, this method should be able to open a json file and read information from line by line. 
+In this case, each line must be returned by the yield statement, thereby you implement an iterator function.
+
+#### Task 3.2
+Implement an method-iterator that accepts a dictionary from json and name of key.
+If a given key contains nesting in the dictionary, for example, a non-empty list, then on its basis you need to create a set of new dictionaries that differ only in the value in the passed key containing nesting and return one at a time by the yield statement.
+If the given key is not in the dictionary, then it is required to return the original dictionary with the yield statement.
+
+__EXAMPLE__:
+_FROM_
+![alt tag](images/Picture2.png)
+_TO_
+![alt tag](images/Picture3.png)
