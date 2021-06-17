@@ -3331,55 +3331,6 @@ styled.to_excel('task_9.xlsx', engine='openpyxl')
 ```
 
 
-```python
-styled
-```
-
-
-
-
-<style  type="text/css" >
-#T_27c7f_row0_col0,#T_27c7f_row1_col1,#T_27c7f_row2_col0,#T_27c7f_row2_col2,#T_27c7f_row4_col0,#T_27c7f_row4_col2{
-            background-color:  red;
-            background-color:  red;
-        }#T_27c7f_row0_col2,#T_27c7f_row4_col1{
-            background-color:  yellow;
-            background-color:  yellow;
-        }</style><table id="T_27c7f_" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >0</th>        <th class="col_heading level0 col1" >1</th>        <th class="col_heading level0 col2" >2</th>    </tr></thead><tbody>
-                <tr>
-                        <th id="T_27c7f_level0_row0" class="row_heading level0 row0" >0</th>
-                        <td id="T_27c7f_row0_col0" class="data row0 col0" >-0.105783</td>
-                        <td id="T_27c7f_row0_col1" class="data row0 col1" >0.776776</td>
-                        <td id="T_27c7f_row0_col2" class="data row0 col2" >nan</td>
-            </tr>
-            <tr>
-                        <th id="T_27c7f_level0_row1" class="row_heading level0 row1" >1</th>
-                        <td id="T_27c7f_row1_col0" class="data row1 col0" >1.689121</td>
-                        <td id="T_27c7f_row1_col1" class="data row1 col1" >-0.591660</td>
-                        <td id="T_27c7f_row1_col2" class="data row1 col2" >0.043156</td>
-            </tr>
-            <tr>
-                        <th id="T_27c7f_level0_row2" class="row_heading level0 row2" >2</th>
-                        <td id="T_27c7f_row2_col0" class="data row2 col0" >-1.896101</td>
-                        <td id="T_27c7f_row2_col1" class="data row2 col1" >0.683862</td>
-                        <td id="T_27c7f_row2_col2" class="data row2 col2" >-1.006551</td>
-            </tr>
-            <tr>
-                        <th id="T_27c7f_level0_row3" class="row_heading level0 row3" >3</th>
-                        <td id="T_27c7f_row3_col0" class="data row3 col0" >0.007694</td>
-                        <td id="T_27c7f_row3_col1" class="data row3 col1" >1.230841</td>
-                        <td id="T_27c7f_row3_col2" class="data row3 col2" >2.000745</td>
-            </tr>
-            <tr>
-                        <th id="T_27c7f_level0_row4" class="row_heading level0 row4" >4</th>
-                        <td id="T_27c7f_row4_col0" class="data row4 col0" >-0.672194</td>
-                        <td id="T_27c7f_row4_col1" class="data row4 col1" >nan</td>
-                        <td id="T_27c7f_row4_col2" class="data row4 col2" >-0.404620</td>
-            </tr>
-    </tbody></table>
-
-
-
 10. Is that true that for states that have 'voice mail plan' service churn appears more frequently than for states that don't have such service?
 
 
