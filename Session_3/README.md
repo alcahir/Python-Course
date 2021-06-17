@@ -43,7 +43,7 @@ NOTE: words should only consist of alphabet tokens and be in lowercase.
 Implement the decorator function, which helps to count how many times
 the function has occurred.
 
-NOTE: __not__ able to use global variables.
+NOTE: usage of global variables is forbidden.
 
 Implementation example:
 ```python

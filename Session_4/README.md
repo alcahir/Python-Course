@@ -27,7 +27,7 @@ The number of points for each question depends on your fancy.
 Note: use `input()` function to provide an opportunity to give the answer.
 
 
-#### Task 4.4 __Mini quiz__ 
+#### Task 4.4* __Mini quiz__ 
 Write a Python class named Student with two attributes `student_name` and `mark`.
 Implement a magic method `__call__` so that when you call this method then will start the survey from __Task 4.3__.
 The result of quiz and name of student have to be written in `mark` and `student_name` attributes of class. 
