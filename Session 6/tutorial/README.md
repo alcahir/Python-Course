@@ -700,6 +700,7 @@ df1
 
 
 <div>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -772,7 +773,7 @@ df2
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -784,7 +785,7 @@ df2
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -858,7 +859,7 @@ df2
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -870,7 +871,7 @@ df2
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -927,7 +928,7 @@ df2
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -939,7 +940,7 @@ df2
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1005,7 +1006,7 @@ df1
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1017,7 +1018,7 @@ df1
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1087,7 +1088,7 @@ df1.fillna(0)
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1099,7 +1100,7 @@ df1.fillna(0)
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1174,7 +1175,7 @@ df.head() # 5 rows - default
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1186,7 +1187,7 @@ df.head() # 5 rows - default
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1421,7 +1422,7 @@ df.describe()
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1433,7 +1434,7 @@ df.describe()
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1655,7 +1656,7 @@ df.sort_values(by="Total day charge", ascending=False).head()
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1667,7 +1668,7 @@ df.sort_values(by="Total day charge", ascending=False).head()
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1827,7 +1828,7 @@ df.sort_values(by=["Churn", "Total day charge"], ascending=[True, False]).head()
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1839,7 +1840,7 @@ df.sort_values(by=["Churn", "Total day charge"], ascending=[True, False]).head()
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2084,7 +2085,7 @@ df.loc[0:5, "State":"Area code"]
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2096,7 +2097,7 @@ df.loc[0:5, "State":"Area code"]
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2158,7 +2159,7 @@ df.iloc[0:5, 0:3]
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2170,7 +2171,7 @@ df.iloc[0:5, 0:3]
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2264,7 +2265,7 @@ df[df["State"].apply(lambda state: state[0] == "W")].head()
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2276,7 +2277,7 @@ df[df["State"].apply(lambda state: state[0] == "W")].head()
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2438,7 +2439,7 @@ df.head()
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2450,7 +2451,7 @@ df.head()
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2621,7 +2622,7 @@ df.groupby(["Churn"])[columns_to_show].describe(percentiles=[])
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2637,7 +2638,7 @@ df.groupby(["Churn"])[columns_to_show].describe(percentiles=[])
     .dataframe thead tr:last-of-type th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -2751,7 +2752,7 @@ df.groupby(["Churn"])[columns_to_show].agg([np.mean, np.std, np.min, np.max])
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2767,7 +2768,7 @@ df.groupby(["Churn"])[columns_to_show].agg([np.mean, np.std, np.min, np.max])
     .dataframe thead tr:last-of-type th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -2863,7 +2864,7 @@ df1.set_index('key').join(df2.set_index('key'))
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2875,7 +2876,7 @@ df1.set_index('key').join(df2.set_index('key'))
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2935,7 +2936,7 @@ df1.set_index('key').join(df2.set_index('key'), how = 'inner')
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -2947,7 +2948,7 @@ df1.set_index('key').join(df2.set_index('key'), how = 'inner')
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2998,7 +2999,7 @@ pd.crosstab(df["Churn"], df["International plan"])
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -3010,7 +3011,7 @@ pd.crosstab(df["Churn"], df["International plan"])
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3064,7 +3065,7 @@ df.pivot_table(
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -3076,7 +3077,7 @@ df.pivot_table(
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3141,7 +3142,7 @@ df.head()
 
 
 <div>
-<style scoped>
+
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -3153,7 +3154,7 @@ df.head()
     .dataframe thead th {
         text-align: right;
     }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
