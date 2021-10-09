@@ -9,10 +9,10 @@ class FeatureTransformer:
 
     @staticmethod
     def transform_date(date):
-        pass
+        ### your code ###
 
     @staticmethod
     def price_to_float(price):
-        pass
+        ### your code ###
 
 
