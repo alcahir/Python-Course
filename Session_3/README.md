@@ -60,7 +60,7 @@ The transpose of a matrix is the matrix flipped over its main diagonal, switchin
 
 #### Task 6
 Write a Python function `task_6` to find validity of a string of parentheses, '(', ')'.  
-# These brackets must be close in the correct order, for example "()".  
+These brackets must be close in the correct order, for example "()".  
 ```python
 >>> task_6("((()))")
 True
