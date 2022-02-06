@@ -2,11 +2,12 @@
 ## Tasks
 
 #### Task 1
-Write a Python function `task_1` to find those numbers which are divisible by 3 and multiple of 5, between 1 and  1000 (both included). Return list of correct numbers.
+Write a Python function `task_1` to find those numbers which are divisible by 3 and multiple of 5, between 1 and  1000 (both included).  
+Return list of correct numbers.
 
 #### Task 2
-Write a Python function `task_2` that accepts a string and calculate the number(integers) of digits
-and letters(english). Return num of digits and num of letters.
+Write a Python function `task_2` that accepts a string and calculate the number(integers) of digits and letters(english).  
+Return num of digits and num of letters.
 Example:
 ```python
 >>> task_2("12abd3")
@@ -18,11 +19,11 @@ Example:
 ```
 
 #### Task 3
-Write a Python function `task_3` to compute the difference between two lists. __Each list consists of unique values!__
-Return tuple of differences.
-Sample data: ["red", "orange", "green", "blue", "white"], ["black", "yellow", "green", "blue"]
-Color1-Color2: ['white', 'orange', 'red']
-Color2-Color1: ['black', 'yellow']
+Write a Python function `task_3` to compute the difference between two lists. __Each list consists of unique values!__  
+Return tuple of differences.  
+Sample data: ["red", "orange", "green", "blue", "white"], ["black", "yellow", "green", "blue"]  
+Color1-Color2: ['white', 'orange', 'red']  
+Color2-Color1: ['black', 'yellow']  
 ```python
 >>> task_3(["red", "orange", "green", "blue", "white"], ["black", "yellow", "green", "blue"])
 (['white', 'orange', 'red'], ['black', 'yellow'])
@@ -37,9 +38,9 @@ Example:
 ```
 
 #### Task 5
-Write a Python function `task_5` to find the list in a list of lists whose sum of elements is the highest.
-If the nested lists have the same max sum, then you need to return first of them.
-Return this list.
+Write a Python function `task_5` to find the list in a list of lists whose sum of elements is the highest.  
+If the nested lists have the same max sum, then you need to return first of them.  
+Return this list.  
 Example:
 ```python
 >>> task_5([[1,2], [3], [0, 12, 17, 6]])
@@ -60,7 +61,7 @@ Write a Python function `task_6` to reverse integer without usage of converting 
 ```
 
 #### Task 7
-Write a Python function `task_7` to find the first non-repeating character in given string.
+Write a Python function `task_7` to find the first non-repeating character in given string.  
 Return this symbol if it's existed. Otherwise, None has to be returned.
 ```python
 >>> task_7("aba")
@@ -72,8 +73,8 @@ b
 ```
 
 #### Task 8
-Implement a Python function `task_8` with given list of integers, 
-return a new list such that each element at index `i` of the new list is the product of all the numbers in the original array except the one at `i`.
+Implement a Python function `task_8` with given list of integers.  
+Return a new list such that each element at index `i` of the new list is the product of all the numbers in the original array except the one at `i`.
 ```python
 >>> foo([1, 2, 3, 4, 5])
 [120, 60, 40, 30, 24]
