@@ -1,37 +1,35 @@
 ﻿
 ## Tasks
 
-#### Task 4.1
-Implement an abstract class named `GeometricFigure()`. It should have abstract methods to calculate square
-and perimeter of the figure.
+#### Task 1
+Create class `Trainee`, whose constructor receives Trainees' name and surname.
 
+#### Task 2
+Create method `visit_lecture`. This method has to be able to add 1 point to `visited_lectures` attribute.
 
-#### Task 4.2
-Implement class named `Circle()`. It must inherit abstract class `GeometricFigure` from __Task 4.1__. Instance of this
-class is initialized by radius. It must have redefined methods of a parent class to calculate square and
-perimeter of the circle.
+#### Task 3
+Create method `do_homework`. This method has to be able to add 2 points to `done_home_tasks` attribute.
 
+#### Task 4
+Create method `miss_lecture`. This method has to be able to subtract 1 point from the `missed_lectures` attribute.
 
-#### Task 4.3
-Write a function `start quiz()` which has 5 questions with boolean options of answer inside itself.
-The first question "What's your name?" is without scoring.
+#### Task 5
+Create method `miss_homework`. This method has to be able to subtract 2 point from the `missed_homework` attribute.
 
-Example of quesions:
-* Do you like this course? (_Yes_ / _No_)
-* Do you want the next session? :) (_Yes_ / _No_)
-* Is carrot red? (_Yes_ / _No_)
-* ...
-* ...
+#### Task 6
+Create method `_add_points`.  
+This method has to be able to add a certain number of pointsto the `mark` attribute depending upon where it is used either in `visit_lecture` or in `do_homework`.  
+NOTE: The mark can't be more than 10 points. Keep in mind.
 
-The number of points for each question depends on your fancy.
-Note: use `input()` function to provide an opportunity to give the answer.
+#### Task 7
+Create method `_subtract_points`. This method has to be able to subtract a certain number of points to the `mark` attribute depending upon where it is used either in `miss_lecture` or in `miss_homework`.  
+Note: The mark can't be less than 0 points. Think about it.
 
-
-#### Task 4.4* __Mini quiz__ 
-Write a Python class named Student with two attributes `student_name` and `mark`.
-Implement a magic method `__call__` so that when you call this method then will start the survey from __Task 4.3__.
-The result of quiz and name of student have to be written in `mark` and `student_name` attributes of class. 
-After printing an instance of this class, should be displayed a message __'Student {student_name} has received {mark} points'__.
+#### Task 8
+Create method `is_passed`.  
+If `mark` attribute is equal or more than 8 points, you need to print this phrase: "Good job!".  
+Otherwise, print "You need to {here is missing points} points. Try to do your best!".  
+Note: As you can see, you need to have at least 8 points in order to compete lab successfully.
 
 
 ## Materials
