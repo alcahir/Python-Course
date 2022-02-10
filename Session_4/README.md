@@ -14,7 +14,7 @@ Create method `do_homework`. This method has to be able to add 2 points to `done
 Create method `miss_lecture`. This method has to be able to subtract 1 point from the `missed_lectures` attribute.
 
 #### Task 5
-Create method `miss_homework`. This method has to be able to subtract 2 point from the `missed_homework` attribute.
+Create method `miss_homework`. This method has to be able to subtract 2 point from the `missed_home_tasks` attribute.
 
 #### Task 6
 Create method `_add_points`.  
