@@ -24,7 +24,7 @@ def test_do_homework_correct_work(trainee_chetan):
     for i in range(5):
         trainee_chetan.do_homework()
 
-    assert 5 == trainee_chetan.done_home_tasks, (
+    assert 10 == trainee_chetan.done_home_tasks, (
         "Incorrect number of done home tasks"
     )
     assert 10 == trainee_chetan.mark, (

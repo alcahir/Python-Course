@@ -86,6 +86,10 @@ def test_2_correct_work():
 def test_task_3_correct_work(test_input, expected):
     output = task_3(test_input)
 
+    assert len(output) == len(expected), (
+        "Incorrect num of combinations"
+    )
+    
     for exp_value in expected:
         exp_value = "".join(sorted(exp_value))
         same_value = None
