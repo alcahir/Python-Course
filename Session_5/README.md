@@ -40,15 +40,10 @@ Note: words should only consist of alphabet tokens and be in lowercase.
 __USE THE DEFAULT PATHS FROM *.PY MODULE, PLEASE!__
 
 #### Task 3
-Write Python function `task3` to get request by using given url.  
-If you have an internet connection, the function should return response based on `requests.get(url)`.  
-Otherwise, function should raise exception `ConnectionError` from `requests.exceptions` lib.
-```python
->>> task_3("https://github.com/alcahir/Python-Course/tree/master/Session_5")
-<Response [200]>
->>> task_3("https://github.com/alcahir/Python-Course/tree/master/Session_5")
-requests.exceptions.ConnectionError: [Errno Connection Error] Check the internet connection
-```
+Write Python function `task3` to get request by using given url. You need to raise an exception `RequestException` from `requests.exceptions`.  
+Just info: It's a parent exception for `HTTPError`, `ConnectionError` and etc.  
+Use the `response.raise_for_status()` to raise an exception.  
+If your response has 200 status then just return `requests.get(url)` response.  
 
 #### Task 4
 Write a Python function `task_4` with parameter `data`. The data can contain such types of elements like `str`, `float`, `int`.  

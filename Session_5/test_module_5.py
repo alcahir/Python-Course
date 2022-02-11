@@ -1,7 +1,7 @@
 import os
 import sys
 import requests
-from requests.exceptions import ConnectionError
+from requests.exceptions import RequestException
 from io import TextIOWrapper, BytesIO
 
 import pytest
@@ -11,8 +11,9 @@ from module_5 import *
 
 
 EXPECTED_FILE = "full_names.txt"
-GITHUB_URL = "https://github.com/alcahir/Python-Course/tree/master/Session_5"
-INCORRECT_URL = "https://lab-epam.com/"
+EPAM_URL = "https://www.epam.com/"
+UNAVAILABLE_URL = "https://onlinelibrary.wiley.com/loi/14685922/"
+BAD_AUTHORIZATION_URL = "https://www.sciencedirect.com/journal/food-and-chemical-toxicology"
 
 
 def test_task_sorted_full_names_exist():
@@ -72,13 +73,20 @@ def test_task_2_correct_work(top_k, expected):
         )
 
 
-def test_task_3_correct_raise():
-    with pytest.raises(ConnectionError):
-        response = requests.get(INCORRECT_URL)
+@pytest.mark.parametrize(
+    "url",
+    [
+        pytest.param(UNAVAILABLE_URL),
+        pytest.param(BAD_AUTHORIZATION_URL)
+    ]
+)
+def test_task_3_correct_raise(url):
+    with pytest.raises(RequestException):
+        response = task_3(url)
 
 
 def test_task_3_correct_response():
-    response = requests.get(GITHUB_URL)
+    response = task_3(EPAM_URL)
     assert response.status_code == 200, (
         "Incorrect status code"
     )
