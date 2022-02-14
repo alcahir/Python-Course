@@ -32,7 +32,8 @@ Put the result from task 7 to file __'.avro'__
 Please update __"sales_amount""__ column according to the following rule __"sale_amount"__ = __"sale_amount"__ + __avg(sale_amount)__ * 0.02 (Please try to use apply and lambda for it)
 
 #### Task 6.11
-Please find all houses that are unsold yet (exists in __houses__ but does not exist in __sales__, join by __house_id__). Put house names to __".json"__
+Please find all houses that are unsold yet (exists in houses but does not exist in sales, join by house_id).  
+Put house ids to __.json__ ('output_files/task_11.json'). Put result list of unique house names into `house_ids_available` list.
 
 #### Task 6.12 __(OPTIONAL)__
 Please find sum of __sales_amount__ by each employee, put the result to excel (__emp_id__, __emp_first_name__, __emp_last_name__, sum(__sales_amount__)) and mark employees who have less than average __sales_amount__ with red.
