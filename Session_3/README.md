@@ -8,7 +8,7 @@ You can use this function to build closures that run different power operations.
 ```python 
 >>> power = task_1(3)
 >>> power(3)
-9
+27
 >>> power(4)
 64
 >>> power(0)
