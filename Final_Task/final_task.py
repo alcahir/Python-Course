@@ -43,7 +43,7 @@ class InvertedIndex:
     """
     This module is necessary to extract inverted indexes from documents.
     """
-    def __init__(self, words_ids: Dict[str, int]):
+    def __init__(self, words_ids: Dict[str, List[int]]):
         pass
 
     def query(self, words: List[str]) -> List[int]:
