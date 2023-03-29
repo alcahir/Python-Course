@@ -18,7 +18,6 @@ You can use this function to build closures that run different power operations.
 #### Task 2
 Write a Python function `task_2` that can accept any num of positional and keyword arguments.
 You need to print each value of argument in the order it's passed to the function.
-You can use this function to build closures that run different power operations.
 ```python 
 >>> task_2(1, 2, 3, moment=4, cap="arkadiy")
 1
