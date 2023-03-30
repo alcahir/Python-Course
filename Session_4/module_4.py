@@ -1,4 +1,4 @@
-PASSING_GRADE = 10
+PASSING_GRADE = 8
 
 
 class Trainee:
