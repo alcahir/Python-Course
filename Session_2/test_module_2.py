@@ -87,22 +87,11 @@ def test_task_3_correct_work(test_input, expected):
     output = task_3(test_input)
 
     assert len(output) == len(expected), (
-        "Incorrect num of combinations"
+        "Incorrect length"
     )
-    
-    for exp_value in expected:
-        exp_value = "".join(sorted(exp_value))
-        same_value = None
-        for out_value in output:
-            out_value = "".join(sorted(out_value))
-
-            if out_value == exp_value:
-                same_value = out_value
-                break
-
-        assert exp_value == same_value, (
-            f"Your output doesn't contain {exp_value}"
-        )
+    assert set(output) == set(expected), (
+        "Combination Mismatch"
+    )
 
 
 @pytest.mark.parametrize(
