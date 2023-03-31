@@ -59,7 +59,7 @@ Example:
 ```
 
 #### Task 5
-Write a Python function `task_5`. You need to declare two variables via `input()` in the body of the function.  
+Write a Python function `task_5`. You need to declare two variables via `input().split()` in the body of the function.  
 Try to divide first variable on second. If the second variable is zero you have to `print("Can't divide by zero")`.  
 Another option is to `print("Entered value is wrong")`, if you get exception `ValueError`.  
 Finally, if the result of division can be calculated without any exception then just print this result.
