@@ -31,7 +31,7 @@ for ...:
 
 
 ## Task 2
-Once upon a time, in a magical land called the Land of Mirrors, there lived a young explorer named Lily. Lily was fascinated by the wonders of reflection and loved to solve number mysteries.
+In a magical land called the Land of Mirrors, there lived a young explorer named Lily. Lily was fascinated by the wonders of reflection and loved to solve number mysteries.
 In the Land of Mirrors, flipping an integer was an enchanting process. It involved placing the number in front of a magical mirror, which would reflect and rearrange the digits, creating a new number with the digits in reverse order. It was like a magical dance of numbers!
 Excited to uncover the secrets of the Land of Mirrors, Lily took hold of a number and approached a magnificent mirror. With a gleam in her eyes, Lily placed the number in front of the mirror and watched in amazement as the reflection rearranged the digits, creating a new number.
 For example, if Lily placed the number 123 in front of the mirror, the reflection would transform it into the number 321. It was as if the mirror had its own magic to flip the digits!
