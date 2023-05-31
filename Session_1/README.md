@@ -27,7 +27,7 @@ Pair in list
 for ...:
     for ...
 ```
-![bear](https://github.com/alcahir/Python-Course/assets/57391255/862e9e9e-e585-4cda-828a-898b4eb27fa4 =200x200)
+![bear](https://github.com/alcahir/Python-Course/assets/57391255/862e9e9e-e585-4cda-828a-898b4eb27fa4 | width=100)
 
 
 ## Task 2
