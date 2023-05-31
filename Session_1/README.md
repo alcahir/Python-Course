@@ -52,6 +52,7 @@ Pair in list
 
 ##### _Restrictions:_
 * Using string operations are strictly forbidden.
+
 ![little_girl](https://github.com/alcahir/Python-Course/assets/57391255/7e53059c-4f3b-43b7-ac3f-f226ea46ccb9)
 
 
