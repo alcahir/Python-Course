@@ -45,7 +45,6 @@ List of integers
 sample = 130
 ```
 ##### _Output:_
-Pair in list
 ```python
 31
 ```
@@ -68,11 +67,9 @@ List of integers
 sample = [2, 1, 3, 4, 2]
 ```
 ##### _Output:_
-Pair in list
 ```python
 2
 ```
-
 ##### _Notes:_
 - If no one integer appears more than once you need to return -1.
 - Try to solve the task witohut additional containers, sush as, list, dict, set and etc.
@@ -118,7 +115,6 @@ List of integers
 sample = "XIX"
 ```
 ##### _Output:_
-Pair in list
 ```python
 19
 ```
@@ -135,8 +131,7 @@ List of integers
 ```python
 sample = [3, 4, -1, 10, 12]
 ```
-##### _Output:_
-Pair in list
+##### _Output:
 ```python
 -1
 ```
