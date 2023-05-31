@@ -52,7 +52,7 @@ sample = 130
 ##### _Restrictions:_
 * Using string operations are strictly forbidden.
 
-![little_girl](https://github.com/alcahir/Python-Course/assets/57391255/7e53059c-4f3b-43b7-ac3f-f226ea46ccb9)
+![tom](https://github.com/alcahir/Python-Course/assets/57391255/f13d1cf9-7e46-4581-8eac-ec2689ada29d)
 
 
 ## Task 3
