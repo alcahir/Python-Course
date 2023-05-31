@@ -27,7 +27,7 @@ Pair in list
 for ...:
     for ...
 ```
-(add little girl)
+![bear](https://github.com/alcahir/Python-Course/assets/57391255/862e9e9e-e585-4cda-828a-898b4eb27fa4)
 
 
 ## Task 2
@@ -52,8 +52,7 @@ Pair in list
 
 ##### _Restrictions:_
 * Using string operations are strictly forbidden.
-
-(add crying mem)
+![little_girl](https://github.com/alcahir/Python-Course/assets/57391255/7e53059c-4f3b-43b7-ac3f-f226ea46ccb9)
 
 
 ## Task 3
@@ -81,6 +80,7 @@ Pair in list
 ```python
 [1,2,3,].index(2) (no-no-no)
 ```
+![aki](https://github.com/alcahir/Python-Course/assets/57391255/ac2fbfc5-0a6d-40db-976c-63fb16552270)
 
 
 ## Task 4
