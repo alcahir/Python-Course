@@ -1,34 +1,36 @@
-from numbers import Number
-from typing import List, Tuple, Any
+from typing import List
 
 
-def task_1():
+def task_1(array: List[int], target: int) -> List[int]:
+    """
+    Write your code below
+    """
     pass
 
 
-def task_2(queue: str):
+def task_2(number: int) -> int:
+    """
+    Write your code below
+    """
     pass
 
 
-def task_3(data_1: List[Any], data_2: List[Any]):
+def task_3(array: List[int]) -> int:
+    """
+    Write your code below
+    """
     pass
 
 
-def task_4(values: List[int]) -> int:
+def task_4(string: str) -> int:
+    """
+    Write your code below
+    """
     pass
 
 
-def task_5(batches: List[List[Number]]) -> List:
-    pass
-
-
-def task_6(value: int) -> int:
-    pass
-
-
-def task_7(string: str):
-    pass
-
-
-def task_8(values: List[int]):
+def task_5(array: List[int]) -> int:
+    """
+    Write your code below
+    """
     pass
