@@ -56,7 +56,7 @@ sample = 130
 
 ## Task 3
 In a colorful world of numbers, there was a young adventurer named Max. Max loved embarking on exciting quests and solving a number of mysteries. One day, Max encountered a special challenge.
-In this extraordinary challenge, Max was given a magical list of integers between 1 and n inclusively, where the n - length of the input list. He was asked to find the first number that appeared more than once on the list.
+In this extraordinary challenge, Max was given a magical list of integers between 1 and n inclusively, where the n - length of the input list. He was asked to find the first number that appeared more than once on the list(where the list is read from left to right).
 
 Can you help Max to solve this task?
 
