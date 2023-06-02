@@ -219,6 +219,11 @@ def test_task_6_correct_work(test_input, expected):
             "",
             id='Example: ["", "obama"]',
         ),
+        pytest.param(
+            ["oke", "eko"],
+            "",
+            id='Example: ["oke", "eko"]'
+        )
     ],
 )
 def test_task_7_correct_work(test_input, expected):
