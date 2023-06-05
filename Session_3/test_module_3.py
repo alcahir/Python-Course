@@ -101,6 +101,7 @@ def test_task_5_correct_work(size):
         pytest.param("()()()()", True, id='Example: ()()()()'),
         pytest.param("(())()((()()))", True, id='Example: (())()((()()))'),
         pytest.param(")))", False, id='Example: )))'),
+        pytest.param("())(()", False, id='Example: ())(()'),
     ]
 )
 def test_task_6_correct_work(brackets, expected):
