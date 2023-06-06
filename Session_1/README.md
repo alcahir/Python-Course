@@ -89,6 +89,8 @@ Let's try to solve the task!
 
 ##### _Notes:_
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+It is guaranteed that only the mentioned characters will be suppressed on the input.
+
 | Symbol | Value |
 | ------ | ------ |
 | I | 1 |
@@ -110,7 +112,6 @@ There are six instances where subtraction is used:
 * `C` can be placed before `D` (500) and `M` (1000) to make 400 and 900.
 
 ##### _Input:_
-List of integers
 ```python
 sample = "XIX"
 ```
