@@ -94,3 +94,42 @@ def test_fail_trainee_correct_work(trainee_chetan, capsys):
     )
 
 
+def test_mark_under_ten_after_many_actions(trainee_chetan, capsys):
+    for i in range(3):
+        trainee_chetan.visit_lecture()
+        trainee_chetan.do_homework()
+    trainee_chetan.do_homework()
+
+    trainee_chetan.is_passed()
+
+    out, err = capsys.readouterr()
+
+    assert 10 == trainee_chetan.mark, (
+        "Incorrect mark"
+    )
+
+    assert "Good job!" in out, (
+        "You don't print 'Good job!'"
+    )
+
+
+def test_mark_non_negative_after_many_actions(trainee_chetan, capsys):
+    trainee_chetan.visit_lecture()
+    trainee_chetan.do_homework()
+    trainee_chetan.miss_lecture()
+
+    for i in range(3):
+        trainee_chetan.visit_lecture()
+        trainee_chetan.miss_homework()
+
+    trainee_chetan.is_passed()
+
+    out, err = capsys.readouterr()
+
+    assert 0 == trainee_chetan.mark, (
+        "Incorrect mark"
+    )
+
+    assert "You need to 8 points. Try to do your best!" in out, (
+        "Incorrect print when you fail exam. Check the current mark."
+    )
