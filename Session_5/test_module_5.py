@@ -81,8 +81,9 @@ def test_task_2_correct_work(top_k, expected):
     ]
 )
 def test_task_3_correct_raise(url):
-    with pytest.raises(RequestException):
+    with pytest.raises(RequestException) as excn:
         response = task_3(url)
+    assert excn.type is RequestException
 
 
 def test_task_3_correct_response():
