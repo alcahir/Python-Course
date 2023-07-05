@@ -1,6 +1,6 @@
 import pytest
 
-from .module_1 import *
+from module_1 import *
 
 
 @pytest.mark.parametrize(
