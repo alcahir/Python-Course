@@ -1,0 +1,12 @@
+# IDE
+.vscode/
+.idea/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Unit test
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
