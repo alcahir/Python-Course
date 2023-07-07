@@ -282,7 +282,7 @@ def test_task_7_correct_work(test_input, expected):
             "",
             "anything",
             -1,
-            id='Example: 'in empty string find `anything`',
+            id='Example: in empty string find `anything`',
         ),
     ],
 )
