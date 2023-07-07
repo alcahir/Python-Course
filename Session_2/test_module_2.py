@@ -278,6 +278,12 @@ def test_task_7_correct_work(test_input, expected):
             0,
             id='Example: "Star Killer" find ""',
         ),
+        pytest.param(
+            "",
+            "anything",
+            -1,
+            id='Example: 'in empty string find `anything`',
+        ),
     ],
 )
 def test_task_8_correct_work(test_input_1, test_input_2, expected):
