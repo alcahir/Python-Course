@@ -186,6 +186,7 @@ def test_task_5_correct_work(test_input, expected):
 def test_task_6_correct_work(test_input, expected):
     output = task_6(test_input)
 
+    assert type(output) is list
     assert set(output) == set(expected), (
         "See tests!"
     )
@@ -265,6 +266,18 @@ def test_task_7_correct_work(test_input, expected):
             "l",
             7,
             id='Example: "Star Killer" find l',
+        ),
+        pytest.param(
+            "Star Killer",
+            "le",
+            8,
+            id='Example: "Star Killer" find le',
+        ),
+        pytest.param(
+            "aaaron",
+            "aar",
+            1,
+            id='Example: "aaron" find ar',
         ),
         pytest.param(
             "Star Killer",
