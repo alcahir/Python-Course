@@ -65,7 +65,7 @@ def test_task_3_correct_decorator_print(capsys):
 def test_task_4_correct_time_management(capsys):
     task_4()
     out, err = capsys.readouterr()
-    run_time = float(re.search(r"[+-]?([0-9]*[.])[0-9]+", "task_4 0.01").group(0))
+    run_time = float(re.search(r"[+-]?([0-9]*[.])[0-9]+", out).group(0))
 
     assert 0 < run_time < 5, (
         "You have a weak PC :)"

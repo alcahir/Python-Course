@@ -22,9 +22,9 @@ Return list of combinations.
 ```
 
 #### Task 4
-Write a Python function `task_4` to find the highest 3 values of corresponding keys in a dictionary.  
-If dictionary contains less then 3 values, you need to return the remaining.  
-Return List[aim elements].
+Write a Python function `task_4` to find the keys of the corresponding 3 highest values in a dictionary.  
+If dictionary contains less than 3 values, you need to return the remaining.  
+Return List[aim keys].
 ```python
 >>> task_4({'a': 500, 'b': 5874, 'c': 560,'d': 400, 'e': 5874, 'f': 20})
 ["b", "e", "c"]
@@ -64,6 +64,8 @@ flow
 Write a Python function `task_8` to return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.  
 What should we return when needle is an empty string?  
 For the purpose of this problem, we will return 0 when needle is an empty string.
+Use of string methods `index`, `find`, etc. is forbidden.
+
 ```python
 >>> task_8("Star Killer", "Killer")
 5
