@@ -1,25 +1,12 @@
 import os
 import sys
-from io import TextIOWrapper, BytesIO
-from argparse import Namespace
-
-import pytest
 from unittest.mock import patch
 
-from final_task import (
-    process_query,
-    process_build,
-    callback_query,
-    callback_build,
-    main,
-    DEFAULT_PATH_TO_STORE_INVERTED_INDEX,
-    EncodedFileType,
-)
+from final_task import main, process_build, process_query
 
-
-PATH_TO_JSON_INDEX = 'inverted.index'
-PATH_TO_SIMPLE_QUERIES = 'simple_queries.txt'
-PATH_TO_DATASET = 'wikipedia_sample'
+PATH_TO_JSON_INDEX = "inverted.index"
+PATH_TO_SIMPLE_QUERIES = "simple_queries.txt"
+PATH_TO_DATASET = "wikipedia_sample"
 
 
 def test_process_build_inverted_indexes():
@@ -30,9 +17,7 @@ def test_process_build_inverted_indexes():
         dataset=PATH_TO_DATASET,
         output=PATH_TO_JSON_INDEX,
     )
-    assert os.path.exists(PATH_TO_JSON_INDEX), (
-        'file is not defined'
-    )
+    assert os.path.exists(PATH_TO_JSON_INDEX), "file is not defined"
 
 
 def test_process_query_can_process_all_queries_from_file(capsys):
@@ -43,16 +28,15 @@ def test_process_query_can_process_all_queries_from_file(capsys):
         )
         captured = capsys.readouterr()
 
-        for value in ['8522', '8716', '4086']:
+        for value in ["8522", "8716", "4086"]:
             assert value in captured.out
 
 
 def test_std_argv_input_query(capsys):
-    with patch.object(sys, 'argv', ["prog", "query", '--query', 'python', 'code']):
+    with patch.object(sys, "argv", ["prog", "query", "--query", "python", "code"]):
         main()
 
     out, err = capsys.readouterr()
 
     for value in [6021, 2581, 5783, 7575, 8864, 4266, 6698, 5295, 6834, 9010]:
         assert str(value) in out
-

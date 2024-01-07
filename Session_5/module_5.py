@@ -1,10 +1,12 @@
-from collections import Counter
+# from collections import Counter
+# from random import choice
+from random import seed
 from typing import List, Union
-from random import seed, choice
-from requests.exceptions import ConnectionError
-import requests
 
-from gensim.utils import simple_preprocess
+# from requests.exceptions import ConnectionError
+# import requests
+
+# from gensim.utils import simple_preprocess
 
 
 PATH_TO_NAMES = "names.txt"
