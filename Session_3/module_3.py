@@ -1,6 +1,5 @@
-import time
+# import time
 from typing import List
-
 
 Matrix = List[List[int]]
 
@@ -28,7 +27,7 @@ def timer(func):
 
 @timer
 def task_4():
-    return len([1 for _ in range(0, 10 ** 8)])
+    return len([1 for _ in range(0, 10**8)])
 
 
 def task_5(matrix: Matrix) -> Matrix:
@@ -37,4 +36,3 @@ def task_5(matrix: Matrix) -> Matrix:
 
 def task_6(queue: str):
     pass
-

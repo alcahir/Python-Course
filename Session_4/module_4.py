@@ -27,17 +27,12 @@ class Trainee:
         pass
 
     def __str__(self):
-        status = f"Trainee {self.name.title()} {self.surname.title()}:\n" \
-                 f"done homework {self.done_home_tasks} points;\n" \
-                 f"missed homework {self.missed_home_tasks} points;\n" \
-                 f"visited lectures {self.visited_lectures} points;\n" \
-                 f"missed lectures {self.missed_lectures} points;\n" \
-                 f"current mark {self.mark};\n" \
-
+        status = (
+            f"Trainee {self.name.title()} {self.surname.title()}:\n"
+            f"done homework {self.done_home_tasks} points;\n"
+            f"missed homework {self.missed_home_tasks} points;\n"
+            f"visited lectures {self.visited_lectures} points;\n"
+            f"missed lectures {self.missed_lectures} points;\n"
+            f"current mark {self.mark};\n"
+        )
         return status
-
-
-
-
-
-

@@ -1,6 +1,6 @@
-from collections import defaultdict as dd
-from itertools import product
-from typing import Dict, Any, Tuple, List
+# from collections import defaultdict as dd
+# from itertools import product
+from typing import Any, Dict, List, Tuple
 
 
 def task_1(data_1: Dict[str, int], data_2: Dict[str, int]):
@@ -33,4 +33,3 @@ def task_7(words: [List[str]]) -> str:
 
 def task_8(haystack: str, needle: str) -> int:
     pass
-
