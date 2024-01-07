@@ -1,0 +1,5 @@
+[flake8]
+
+# line length
+max-line-length = 100
+max-doc-length = 100
