@@ -20,7 +20,7 @@ def test_task_sorted_full_names_exist():
 
     assert os.path.exists(
         PATH_TO_OUTPUT
-    ), "sorted_names_and_surnames.txt does not exist in the directory where script module_3.py is!"
+    ), "sorted_names_and_surnames.txt does not exist in the directory where script module_5.py is!"
 
 
 def test_task_1_correct_full_names():
