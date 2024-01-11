@@ -4,10 +4,10 @@ from io import BytesIO, TextIOWrapper
 from unittest.mock import patch
 
 import pytest
-from module_5 import PATH_TO_OUTPUT, task_1, task_2, task_3, task_4, task_5
+from module_5 import PATH_TO_OUTPUT, S5_PATH, task_1, task_2, task_3, task_4, task_5
 from requests.exceptions import RequestException
 
-EXPECTED_FILE = "full_names.txt"
+EXPECTED_FILE = S5_PATH / "full_names.txt"
 EPAM_URL = "https://www.epam.com/"
 UNAVAILABLE_URL = "https://onlinelibrary.wiley.com/loi/14685922/"
 BAD_AUTHORIZATION_URL = (
