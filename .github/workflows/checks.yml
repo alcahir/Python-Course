@@ -7,7 +7,7 @@ on:
       - master
 
 env:
-  BRANCH: ${{github.ref_name}}
+  BRANCH: ${{github.head_ref}}
 
 jobs:
   checks:
@@ -37,6 +37,7 @@ jobs:
           flake8 .
 
       - name: run tests
-        run:
-          if [[ "$BRANCH" ==  ^Session_ ]]; then
+        run: |
+          if [[ "$BRANCH" =~  ^Session_([0-9]) ]]; then
             pytest ./$BRANCH
+          fi
