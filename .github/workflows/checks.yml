@@ -6,6 +6,9 @@ on:
     branches:
       - master
 
+env:
+  BRANCH: ${{github.head_ref}}
+
 jobs:
   checks:
     runs-on: ubuntu-latest
@@ -34,5 +37,7 @@ jobs:
           flake8 .
 
       - name: run tests
-        run:
-          pytest .
+        run: |
+          if [[ "$BRANCH" =~  ^Session_([0-9]) ]]; then
+            pytest ./$BRANCH
+          fi
