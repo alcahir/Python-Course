@@ -4,7 +4,7 @@ on:
   pull_request_target:
     types: [ opened, synchronize, reopened, labeled, unlabeled ]
     branches:
-      - master
+      - main
 
 env:
   BRANCH: ${{github.head_ref}}
