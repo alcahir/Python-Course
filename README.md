@@ -3,11 +3,9 @@
 ## Set up repository
 1. Install GIT
 2. Clone this repo to you local machine.
-3. Create a private github repo with a name that contains your name and surname:
-daeau23_\<name>_\<surname>_python
-4. Make sure the created repo is private
-5. Change the origin of your local repository to your private repo.
-6. Push content of your local repo to your github repo.
+3. Make sure the created repo is private
+4. Change the origin of your local repository to your private repo.
+5. Push content of your local repo to your github repo.
 
 
 ## Set up your IDE 
