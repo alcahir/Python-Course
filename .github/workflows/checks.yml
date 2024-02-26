@@ -38,6 +38,6 @@ jobs:
 
       - name: run tests
         run: |
-          if [[ "$BRANCH" =~  ^Session_([0-9]) ]]; then
+          if [[ "$BRANCH" =~  ^Session_([1-9]) ]]; then
             pytest ./$BRANCH --tb=short
           fi
