@@ -65,9 +65,8 @@ def test_fail_trainee_correct_work(trainee_chetan, capsys):
     out, err = capsys.readouterr()
 
     assert 5 == trainee_chetan.mark, "Incorrect mark"
-
     assert (
-        "You need to 3 points. Try to do your best!" in out
+        "You need to get 3 more points. Try to do your best!" in out
     ), "Incorrect print when you fail exam. Check the current mark."
 
 
@@ -102,5 +101,5 @@ def test_mark_non_negative_after_many_actions(trainee_chetan, capsys):
     assert 0 == trainee_chetan.mark, "Incorrect mark"
 
     assert (
-        "You need to 8 points. Try to do your best!" in out
+        "You need to get 8 more points. Try to do your best!" in out
     ), "Incorrect print when you fail exam. Check the current mark."
