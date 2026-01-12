@@ -30,7 +30,7 @@ Note: The mark can't be less than 0 points. Think about it.
 #### Task 8
 Create method `is_passed`.  
 If `mark` attribute is equal or more than 8 points, you need to print this phrase: "Good job!".  
-Otherwise, print "You need to {here is missing points} points. Try to do your best!". 
+Otherwise, print "You need to get {here is missing points} more points. Try to do your best!". 
    
 Note: As you can see, you need to have at least 8 points in order to compete lab successfully.
 
