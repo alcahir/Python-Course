@@ -2,9 +2,15 @@ from typing import List
 
 
 def task_1(array: List[int], target: int) -> List[int]:
-    """
-    Write your code below
-    """
+    seen = {}  # value -> index
+
+    for i, num in enumerate(array):
+        complement = target - num
+        if complement in seen:
+            return [seen[complement], i]
+        seen[num] = i
+
+    return []
     pass
 
 
