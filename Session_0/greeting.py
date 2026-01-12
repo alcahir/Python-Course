@@ -1,5 +1,5 @@
-def greeting():
-    print("Hello, World!")
+def mynameis():
+    print("İrem Zehra Günlü")
 
 
-greeting()
+mynameis()
