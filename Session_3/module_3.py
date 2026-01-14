@@ -5,15 +5,43 @@ Matrix = List[List[int]]
 
 
 def task_1(exp: int):
-    pass
+    """
+    Power factory via closure.
+    task_1(exp) returns a function that raises its input to exp.
+    """
+    def power_factory(exp_inner: int):
+        def power(x: int) -> int:
+            return x ** exp_inner
+        return power
+
+    return power_factory(exp)
 
 
 def task_2(*args, **kwags):
-    pass
+    """
+    Print each argument value in the order passed:
+    - positional args first (left to right)
+    - then keyword args in insertion order (Python 3.7+ preserves this)
+    """
+    for v in args:
+        print(v)
+    for v in kwags.values():
+        print(v)
 
 
 def helper(func):
-    pass
+    """
+    Decorator that prints:
+    Hi, friend! What's your name?
+    <original function output>
+    See you soon!
+    """
+    def wrapper(*args, **kwargs):
+        print("Hi, friend! What's your name?")
+        result = func(*args, **kwargs)
+        print("See you soon!")
+        return result
+    return wrapper
 
 
 @helper
@@ -22,7 +50,20 @@ def task_3(name: str):
 
 
 def timer(func):
-    pass
+    """
+    Decorator to measure runtime and print:
+    Finished <funcname> in <seconds> secs
+    """
+    import time
+
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        result = func(*args, **kwargs)
+        run_time = time.perf_counter() - start
+        print(f"Finished {func.__name__} in {run_time:.4f} secs")
+        return result
+
+    return wrapper
 
 
 @timer
@@ -31,8 +72,28 @@ def task_4():
 
 
 def task_5(matrix: Matrix) -> Matrix:
-    pass
+    """
+    Transpose 2D matrix.
+    """
+    if not matrix:
+        return []
+    # assumes rectangular matrix
+    return [list(row) for row in zip(*matrix)]
 
 
 def task_6(queue: str):
-    pass
+    """
+    Valid parentheses string for '(' and ')'.
+    """
+    balance = 0
+    for ch in queue:
+        if ch == "(":
+            balance += 1
+        elif ch == ")":
+            balance -= 1
+            if balance < 0:
+                return False
+        else:
+            # if any other chars appear, treat as invalid
+            return False
+    return balance == 0
