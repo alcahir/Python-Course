@@ -5,15 +5,28 @@ Matrix = List[List[int]]
 
 
 def task_1(exp: int):
-    pass
+    def power_factory(exp_inner: int):
+        def power(x: int) -> int:
+            return x ** exp_inner
+        return power
+
+    return power_factory(exp)
 
 
 def task_2(*args, **kwags):
-    pass
+    for v in args:
+        print(v)
+    for v in kwags.values():
+        print(v)
 
 
 def helper(func):
-    pass
+    def wrapper(*args, **kwargs):
+        print("Hi, friend! What's your name?")
+        result = func(*args, **kwargs)
+        print("See you soon!")
+        return result
+    return wrapper
 
 
 @helper
@@ -22,7 +35,16 @@ def task_3(name: str):
 
 
 def timer(func):
-    pass
+    cimport time
+
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        result = func(*args, **kwargs)
+        run_time = time.perf_counter() - start
+        print(f"Finished {func.__name__} in {run_time:.4f} secs")
+        return result
+
+    return wrapper
 
 
 @timer
@@ -31,8 +53,22 @@ def task_4():
 
 
 def task_5(matrix: Matrix) -> Matrix:
-    pass
+    if not matrix:
+        return []
+    # assumes rectangular matrix
+    return [list(row) for row in zip(*matrix)]
 
 
 def task_6(queue: str):
-    pass
+    balance = 0
+    for ch in queue:
+        if ch == "(":
+            balance += 1
+        elif ch == ")":
+            balance -= 1
+            if balance < 0:
+                return False
+        else:
+            # if any other chars appear, treat as invalid
+            return False
+    return balance == 0
