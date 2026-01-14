@@ -13,10 +13,10 @@ def task_1(exp: int):
     return power_factory(exp)
 
 
-def task_2(*args, **kwags):
+def task_2(*args, **kwargs):
     for v in args:
         print(v)
-    for v in kwags.values():
+    for v in kwargs.values():
         print(v)
 
 
