@@ -5,6 +5,10 @@ Matrix = List[List[int]]
 
 
 def task_1(exp: int):
+    """
+    Power factory via closure.
+    task_1(exp) returns a function that raises its input to exp.
+    """
     def power_factory(exp_inner: int):
         def power(x: int) -> int:
             return x ** exp_inner
@@ -13,14 +17,25 @@ def task_1(exp: int):
     return power_factory(exp)
 
 
-def task_2(*args, **kwargs):
+def task_2(*args, **kwags):
+    """
+    Print each argument value in the order passed:
+    - positional args first (left to right)
+    - then keyword args in insertion order (Python 3.7+ preserves this)
+    """
     for v in args:
         print(v)
-    for v in kwargs.values():
+    for v in kwags.values():
         print(v)
 
 
 def helper(func):
+    """
+    Decorator that prints:
+    Hi, friend! What's your name?
+    <original function output>
+    See you soon!
+    """
     def wrapper(*args, **kwargs):
         print("Hi, friend! What's your name?")
         result = func(*args, **kwargs)
@@ -35,7 +50,11 @@ def task_3(name: str):
 
 
 def timer(func):
-    cimport time
+    """
+    Decorator to measure runtime and print:
+    Finished <funcname> in <seconds> secs
+    """
+    import time
 
     def wrapper(*args, **kwargs):
         start = time.perf_counter()
@@ -53,6 +72,9 @@ def task_4():
 
 
 def task_5(matrix: Matrix) -> Matrix:
+    """
+    Transpose 2D matrix.
+    """
     if not matrix:
         return []
     # assumes rectangular matrix
@@ -60,6 +82,9 @@ def task_5(matrix: Matrix) -> Matrix:
 
 
 def task_6(queue: str):
+    """
+    Valid parentheses string for '(' and ')'.
+    """
     balance = 0
     for ch in queue:
         if ch == "(":
