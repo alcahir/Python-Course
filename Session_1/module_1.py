@@ -5,7 +5,7 @@ def task_1(array: List[int], target: int) -> List[int]:
     """
     Write your code below
     """
-    #sample = [3, 4, -1, 10, 12] target = 2
+    # sample = [3, 4, -1, 10, 12] target = 2
 
     checked_numbers = set()
 
@@ -25,7 +25,7 @@ def task_2(number: int) -> int:
     """
     Write your code below
     """
-    #sample = 130 output = 31
+    # sample = 130 output = 31
 
     is_negative = number < 0
     num = abs(number)
@@ -34,7 +34,7 @@ def task_2(number: int) -> int:
     while num > 0:
         last_digit = num % 10
 
-        reversed_number =(reversed_number * 10) + last_digit
+        reversed_number = (reversed_number * 10) + last_digit
 
         num = num // 10
 
@@ -48,12 +48,12 @@ def task_3(array: List[int]) -> int:
     """
     Write your code below
     """
-    #sample = [2, 1, 3, 4, 2] output = 2
+    # sample = [2, 1, 3, 4, 2] output = 2
 
     for number in array:
         num = abs(number)
 
-        index =  num - 1
+        index = num - 1
 
         if array[index] < 0:
             return num
@@ -68,7 +68,7 @@ def task_4(string: str) -> int:
     Write your code below
     """
 
-    roman_numbers = {"I" : 1, "V" : 5, "X" : 10, "L" : 50, "C" : 100, "D" : 500, "M" : 1000}
+    roman_numbers = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 
     total = 0
     length = len(string)
