@@ -1,5 +1,4 @@
 def greeting():
-    print("Hello, World!")
-
+    print("Hello from Revaz Simsive to the World!")
 
 greeting()
