@@ -1,4 +1,4 @@
 def greeting():
-    print("Hello from Revaz Simsive to the World!")
+    print("Revaz Simsive is my name!")
 
 greeting()
