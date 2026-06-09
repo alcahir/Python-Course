@@ -4,6 +4,7 @@ from typing import Any, Dict, List, Tuple
 
 
 def task_1(data_1: Dict[str, int], data_2: Dict[str, int]):
+    result = {}
     for x, y in data_1.items():
         if x in data_2:
             result.update({x: y + data_2.get(x)})
@@ -22,13 +23,13 @@ def task_2():
 
 def task_3(data: Dict[Any, List[str]]):
 
-    groups = list(data.values()) # [['a', 'b'], ['c', 'd']]
+    groups = list(data.values())  # [['a', 'b'], ['c', 'd']]
 
     result = [""]
 
     for group in groups:
 
-        new_result = [] # [a, b]
+        new_result = []  # [a, b]
 
         for prefix in result:
 
@@ -95,4 +96,3 @@ def task_8(haystack: str, needle: str) -> int:
         return 0
 
     return haystack.find(needle)
-
