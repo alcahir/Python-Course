@@ -51,3 +51,4 @@ def task_5(array: List[int]) -> int:
         if num < smallest:
             smallest = num
     return smallest
+
