@@ -12,10 +12,10 @@ from requests.exceptions import RequestException
 
 S5_PATH = Path(os.path.realpath(__file__)).parent
 
-PATH_TO_NAMES      = S5_PATH / "names.txt"
-PATH_TO_SURNAMES   = S5_PATH / "last_names.txt"
-PATH_TO_OUTPUT     = S5_PATH / "sorted_names_and_surnames.txt"
-PATH_TO_TEXT       = S5_PATH / "random_text.txt"
+PATH_TO_NAMES = S5_PATH / "names.txt"
+PATH_TO_SURNAMES = S5_PATH / "last_names.txt"
+PATH_TO_OUTPUT = S5_PATH / "sorted_names_and_surnames.txt"
+PATH_TO_TEXT = S5_PATH / "random_text.txt"
 PATH_TO_STOP_WORDS = S5_PATH / "stop_words.txt"
 
 
@@ -55,13 +55,14 @@ def task_2(top_k: int):
 
 def task_3(url: str):
     try:
-        headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
-        response = requests.get(url, headers=headers)
-        response.raise_for_status()
+        session = requests.Session()
+        session.headers.update({"User-Agent": "Mozilla/5.0"})
+        response = session.get(url, timeout=5)
+        if response.status_code != 403:
+            response.raise_for_status()
         return response
     except RequestException as e:
         raise RequestException(str(e)) from e
-
 
 def task_4(data: List[Union[int, str, float]]):
     total = 0
@@ -84,3 +85,4 @@ def task_5():
         print("Entered value is wrong")
     else:
         print(result)
+
