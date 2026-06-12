@@ -64,6 +64,7 @@ def task_3(url: str):
     except RequestException as e:
         raise RequestException(str(e)) from e
 
+
 def task_4(data: List[Union[int, str, float]]):
     total = 0
     for item in data:
