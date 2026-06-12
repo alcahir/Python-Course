@@ -85,4 +85,3 @@ def task_5():
         print("Entered value is wrong")
     else:
         print(result)
-
