@@ -2,6 +2,8 @@
 Module for preparing inverted indexes based on uploaded documents
 """
 
+import json
+import re
 import sys
 from argparse import ArgumentParser, ArgumentTypeError, FileType
 from io import TextIOWrapper
@@ -44,11 +46,20 @@ class InvertedIndex:
     """
 
     def __init__(self, words_ids: Dict[str, List[int]]):
-        pass
+        self.index = words_ids
 
     def query(self, words: List[str]) -> List[int]:
         """Return the list of relevant documents for the given query"""
-        pass
+        if not words:
+            return []
+        matches = None
+        for w in words:
+            hits = set(self.index.get(w.lower(), []))
+            if matches is None:
+                matches = hits
+            else:
+                matches = matches & hits
+        return sorted(matches) if matches else []
 
     def dump(self, filepath: str) -> None:
         """
@@ -56,7 +67,8 @@ class InvertedIndex:
         :param filepath: path to file with documents
         :return: None
         """
-        pass
+        with open(filepath, "w", encoding="utf-8") as out:
+            json.dump(self.index, out)
 
     @classmethod
     def load(cls, filepath: str):
@@ -65,7 +77,9 @@ class InvertedIndex:
         :param filepath: path to file with documents
         :return: InvertedIndex
         """
-        pass
+        with open(filepath, "r", encoding="utf-8") as src:
+            data = json.load(src)
+        return cls(data)
 
 
 def load_documents(filepath: str) -> Dict[int, str]:
@@ -74,7 +88,15 @@ def load_documents(filepath: str) -> Dict[int, str]:
     :param filepath: path to file with documents
     :return: Dict[int, str]
     """
-    pass
+    result = {}
+    with open(filepath, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            raw_id, text = line.lower().split("\t", 1)
+            result[int(raw_id)] = text
+    return result
 
 
 def build_inverted_index(documents: Dict[int, str]) -> InvertedIndex:
@@ -83,7 +105,16 @@ def build_inverted_index(documents: Dict[int, str]) -> InvertedIndex:
     :param documents: dict with documents
     :return: InvertedIndex class
     """
-    pass
+    mapping = {}
+    for doc_id, text in documents.items():
+        for token in re.split(r"\W+", text):
+            if not token:
+                continue
+            if token not in mapping:
+                mapping[token] = []
+            if doc_id not in mapping[token]:
+                mapping[token].append(doc_id)
+    return InvertedIndex(mapping)
 
 
 def callback_build(arguments) -> None:
@@ -117,12 +148,11 @@ def process_query(queries, index) -> None:
     """
     inverted_index = InvertedIndex.load(index)
     for query in queries:
-        print(query[0])
         if isinstance(query, str):
             query = query.strip().split()
 
-        doc_indexes = ",".join(str(value) for value in inverted_index.query(query))
-        print(doc_indexes)
+        found = ",".join(str(v) for v in inverted_index.query(query))
+        print(found)
 
 
 def setup_subparsers(parser) -> None:
@@ -188,6 +218,9 @@ def main():
     )
     setup_subparsers(parser)
     arguments = parser.parse_args()
+    if not hasattr(arguments, "callback"):
+        return
+
     arguments.callback(arguments)
 
 
