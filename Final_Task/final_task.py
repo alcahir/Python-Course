@@ -3,7 +3,7 @@ Module for preparing inverted indexes based on uploaded documents
 """
 
 import sys
-from argparse import ArgumentParser, ArgumentTypeError, FileType
+from argparse import ArgumentTypeError, FileType
 from io import TextIOWrapper
 from typing import Dict, List
 
