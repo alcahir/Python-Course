@@ -125,7 +125,7 @@ def process_query(queries, index) -> None:
         print(doc_indexes)
 
 
-def setup_subparsers(parser) -> None:
+def setup_subparsers(parser: ArgumentParser) -> None:
     """
     Initial subparsers with arguments.
     :param parser: Instance of ArgumentParser
